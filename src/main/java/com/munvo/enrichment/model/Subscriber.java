@@ -6,6 +6,10 @@ public class Subscriber {
     private String name;
     private String phone;
 
+    public Subscriber() {
+    	
+    }
+    
     public Subscriber(int id, String name, String phone) {
         this.id = id;
         this.name = name;

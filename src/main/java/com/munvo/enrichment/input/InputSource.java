@@ -27,6 +27,9 @@ public class InputSource {
                 inRecords.stream()
                         .map(fileReaderParser::parseSubscriber)
                         .collect(Collectors.toMap(Subscriber::getId, s -> s));
+//        for(String s : inRecords) {
+//        	System.out.println(fileReaderParser.parseSubscriber(s));
+//    	  }
     }
 
     public Subscriber query(int id) {
